@@ -1,0 +1,28 @@
+public class kategori_nilai {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int hasil, angka6, angka7, angka8, angka9, angka10;
+
+        System.out.println("Masukkan 5 angka");
+        angka6 = in.nextInt();
+        angka7 = in.nextInt();
+        angka8 = in.nextInt();
+        angka9 = in.nextInt();
+        angka10 = in.nextInt();
+        double hasil0;
+
+        hasil = angka6 + angka7 + angka8 + angka9 + angka10;
+        hasil0 = hasil / 5;
+        if (hasil0 <= 60) {
+            System.out.println("rata rata nilai anda = " + hasil0 + " = nilai anda sempurna");
+        } else if (hasil0 > 60 && hasil0 < 70) {
+            System.out.println(hasil0 + " = nilai anda sempurna");
+        } else if (hasil0 > 70 && hasil0 < 80) {
+            System.out.println(hasil + "nilai anda bagus");
+        } else if (hasil0 > 80) {
+            System.out.println(hasil0 + "nilai anda sangat sempurna");
+        }
+    }
+}
